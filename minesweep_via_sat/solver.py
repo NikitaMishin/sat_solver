@@ -22,8 +22,6 @@ def get_adjacent_cells(i, j, rows, cols) -> List[Tuple[int, int]]:
 def number_constraint_for_cell(p, rows, cols, variables, defined_statuses):
     S = Cnf()
 
-    if p == (1,1):
-        print()
     # false imply all
     if p in defined_statuses and defined_statuses[p] == -1:  # is bomb
         return S
