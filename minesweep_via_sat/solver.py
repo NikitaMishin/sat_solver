@@ -6,7 +6,6 @@ from satispy.solver import Minisat
 import argparse
 from functools import reduce
 
-BOMB_STATUS = 0
 
 
 def get_adjacent_cells(i, j, rows, cols) -> List[Tuple[int, int]]:
