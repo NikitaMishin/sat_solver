@@ -10,7 +10,6 @@
 int main() {
 
     auto cnf = parsers::dimacs_parser_to_cnf("/home/nikita/projects/mathlogic/example_sat1");
-//    cnf.first->print(std::cout);
 
     auto solver = new NonRecDPLL();
 
